@@ -12,7 +12,7 @@ import com.smartificials.aida.utils.AppLogger;
 
 import javax.inject.Inject;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+//import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 
 
@@ -20,8 +20,8 @@ public class MvvmApp extends Application {
 
     public AppComponent appComponent;
 
-    @Inject
-    CalligraphyConfig mCalligraphyConfig;
+    //@Inject
+    //CalligraphyConfig mCalligraphyConfig;
 
     @Override
     public void onCreate() {
@@ -40,6 +40,6 @@ public class MvvmApp extends Application {
             AndroidNetworking.enableLogging(HttpLoggingInterceptor.Level.BODY);
         }
 
-        CalligraphyConfig.initDefault(mCalligraphyConfig);
+        //CalligraphyConfig.initDefault(mCalligraphyConfig);
     }
 }

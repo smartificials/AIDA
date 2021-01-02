@@ -31,7 +31,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+//import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 @Module
 public class AppModule {
@@ -55,14 +55,14 @@ public class AppModule {
                 .build();
     }
 
-    @Provides
-    @Singleton
-    CalligraphyConfig provideCalligraphyDefaultConfig() {
-        return new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/source-sans-pro/SourceSansPro-Regular.ttf")
-                .setFontAttrId(R.attr.fontPath)
-                .build();
-    }
+    //@Provides
+   // @Singleton
+//    CalligraphyConfig provideCalligraphyDefaultConfig() {
+//        return new CalligraphyConfig.Builder()
+//                .setDefaultFontPath("fonts/source-sans-pro/SourceSansPro-Regular.ttf")
+//                .setFontAttrId(R.attr.fontPath)
+//                .build();
+    //}
 
     @Provides
     @Singleton
